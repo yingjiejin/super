@@ -54,6 +54,7 @@
         <module>super-sdk</module>
         <module>super-utils</module>
         <module>super-biz</module>
+        <module>super-codegenerator</module>
     </modules>
     <properties>
         <jdk.version>1.7</jdk.version>
