@@ -88,7 +88,7 @@ DROP TABLE IF EXISTS `st_market`;
 CREATE TABLE `st_market` (
   `bill_id` varchar(10) NOT NULL COMMENT '销售账单号',
   `goods_id` varchar(10) NOT NULL COMMENT '商品编号',
-  `sales_quantity` varchar(100) NOT NULL COMMENT '销售数量',
+  `sales_quantity` int (11) NOT NULL COMMENT '销售数量',
   `amount_receivable` decimal(10,2) NOT NULL COMMENT '应收金额',
   `discount_rate` varchar(100) NOT NULL COMMENT '折扣率',
   `amount_paidvar` decimal(10,2) NOT NULL COMMENT '实收金额',
@@ -109,7 +109,7 @@ CREATE TABLE `st_purchase` (
   `purchase_id` varchar(10) NOT NULL DEFAULT '' COMMENT '进货账单号',
   `goods_id` varchar(10) NOT NULL COMMENT '商品编号',
   `supplier_id` varchar(10) NOT NULL COMMENT '供货商编号',
-  `purchase_quantity` varchar(100) NOT NULL COMMENT '进货数量',
+  `purchase_quantity` int (11) NOT NULL COMMENT '进货数量',
   `payment_amount` decimal(10,2) NOT NULL COMMENT '支付金额',
   `purchase_date` date NOT NULL COMMENT '进货日期',
   `operator_id` varchar(10) NOT NULL COMMENT '操作员ID',
